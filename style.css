@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* HEADER START */
+header{
+    height: 100vh;
+    overflow: hidden;
+    background-color: #000;
+}
+/* NAV START */
+nav{
+    display: flex;
+    width: 100%;
+    background-color: rgba(0,0,226, 0.8);
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+.logo img{
+    width:100px;
+    height: 50px;
+}
+/* MENU START */
+.menu ul{ 
+    display: flex;
+    list-style: none;
+    padding: 5px 0;
+    margin-top: 10px;
+}
+.menu ul li{
+    margin-left: 5px;}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+.menu ul li a:hover{
+    background-color: black;
+    border-radius: 10px;
+}
+.active{
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+/* MENU END */
+/* CONTENT START */
+.content{
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    transform: translate(-50% -50%);
+    display: flex;
+}
+.content img{
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+}
+.text{
+    width: 500px;
+}
+.service{
+    width: 100%;
+    position: relative;
+    background: white;
+    height: 100vh;
+}
+.service-header{
+    width: 80%;
+    margin: 0 auto;
+}
+.contact{
+    width: 100%;
+    height: 80vh;
+    padding: 10px;
+}
+.contact-header{
+    width: 80%;
+    margin: 0 auto;
+}
+.contact-images{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+input[type=text]{
+    padding: 10px 5px;
+    width: 70%;
+    margin-bottom: 5px;
+    border:none ;
+    outline: none;
+    border-bottom: 1px solid green;
+}
+input[type=text]:hover{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid green;
+}
+input[type=email]{
+    padding: 10px 5px;
+    width: 70%;
+    margin-bottom: 5px;
+    border:none ;
+    outline: none;
+    border-bottom: 1px solid green;
+}
+input[type=email]:hover{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid green;
+}
+input[type=password]{
+    padding: 10px 5px;
+    width: 70%;
+    margin-bottom: 5px;
+    border:none ;
+    outline: none;
+    border-bottom: 1px solid green;
+}
+input[type=password]:hover{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid green;
+}
+input[type=submit]{
+    color: white;
+    padding: 10px 25px;
+    background-color: blue;
+    font-size: 25px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+
+}
+.hero{
+    width: 90%;
+    margin: 0 auto;
+}
+/* CONTACT END */
+.card{
+    background: #f0f5fb;
+}
+/* MEDIA SCREEN FOR MEDIUM DEVICE */
+@media screen and (max-width:900px){
+    
+    header{
+        height: auto;
+     }
+     nav{
+         flex-direction: column;
+         background: unset;
+         margin-top: 10px;
+         position: unset;
+     }
+     .menu {
+        width: 100%;
+    }
+    .menu ul {
+        padding:  10px;
+        flex-direction: column;
+    }
+    .menu ul li {
+        margin-top: 10px;
+    }
+    .menu ul li a{
+        display:block;
+        text-align: center;
+        transition: 1s;
+    }
+    .menu ul li a:hover{
+        background-color: #fff;
+        color: #000;
+    }
+    .content{
+        display: block;
+        position: unset;
+    }
+    .content img{
+        width: 100%;
+        object-fit: cover;
+    }
+    .text{
+        width: unset;
+    }
+    .service{
+        height: auto;
+        padding: 10px;
+    }
+    .service-header{
+        width: 100%;
+        margin: unset;
+    }
+    .contact{
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+    .contact-header{
+        width: 100%;
+        margin: unset;
+    }
+    .contact-images{
+        height: 100px;
+        width: 100px;
+    
+    }
+    input[type=text]{
+        width: 100%;
+    }
+    input[type=email]{
+        width: 100%;
+    }
+    input[type=password]{
+        width: 100%;
+    }
+
+
+
+}
+/* MEDIA QUEREY START */
+@media screen and (max-width:600px) {
+    /* HEADER START */
+    header{
+       height: auto;
+    }
+    nav{
+        flex-direction: column;
+        background: unset;
+        margin-top: 10px;
+        position: unset;
+    }
+    .menu {
+        width: 100%;
+    }
+    .menu ul {
+        padding:  10px;
+        flex-direction: column;
+    }
+    .menu ul li {
+        margin-top: 10px;
+    }
+    .menu ul li a{
+        display:block;
+        text-align: center;
+        transition: 1s;
+    }
+    .menu ul li a:hover{
+        background-color: #fff;
+        color: #000;
+    }
+    .content{
+        display: block;
+        position: unset;
+    }
+    .content img{
+        width: 100%;
+        object-fit: cover;
+    }
+    .text{
+        width: unset;
+    }
+    /* HEADER END */
+    .service{
+        height: auto;
+        padding: 10px;
+    }
+    .service-header{
+        width: 100%;
+        margin: unset;
+    }
+    .contact{
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+    .contact-header{
+        width: 100%;
+        margin: unset;
+    }
+    .contact-images{
+        height: 100px;
+        width: 100px;
+    
+    }
+    input[type=text]{
+        width: 100%;
+    }
+    input[type=email]{
+        width: 100%;
+    }
+    input[type=password]{
+        width: 100%;
+    }
+}
+/* MEDIA QUEREY END */
